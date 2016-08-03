@@ -67,12 +67,13 @@ public class FhirServerConfigDstu3 extends BaseJavaConfigDstu3 {
 			e.printStackTrace();
 		}
 		//
-		retVal.setUrl("jdbc:mysql://localhost:3306/hapiFhir");
+		retVal.setUrl("jdbc:mysql://...Set MySQL End Point Here");
+		//retVal.setUrl("jdbc:mysql://localhost:3306/hapiFhir"); - FOR LOCAL USE
 		//retVal.setUrl("jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/hapisql");
 		
 		
-		retVal.setUsername("root");
-		retVal.setPassword("Tebow1992");
+		retVal.setUsername(username);
+		retVal.setPassword(password);
 		
 		return retVal;
 	}
